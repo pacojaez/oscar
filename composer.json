@@ -1,0 +1,34 @@
+{
+	"name" : "robertsallent/framework2020",
+	"type" : "project",
+	"license" : "GPL-3.0-or-later",
+	"minimum-stability" : "stable",
+	"description" : "light framework for developing PHP applications",
+	"keywords" : [
+		"develop",
+		"framework"
+	],
+	"homepage" : "https://robertsallent.com",
+	"authors" : [{
+			"name" : "Robert Sallent",
+			"email" : "robertsallent@gmail.com",
+			"homepage" : "http://robertsallent.com",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"php" : ">=7.2.0"
+	},
+	"autoload" : {
+		"classmap" : [
+			"core/",
+			"core/controllers/",
+			"core/exceptions/",
+			"core/libraries/",
+			"app/config/",
+			"app/controllers/",
+			"app/model/",
+			"app/templates/"
+		]
+	}
+}
