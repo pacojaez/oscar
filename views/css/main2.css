@@ -1,0 +1,500 @@
+/*ESTILOS */
+html,
+body {
+    /*font-family: "Quicksand", sans-serif!important;*/
+    font-family: "Montserrat-SemiBold", sans-serif!important;
+    font-family: 'Actor';
+    font-size: 22px;
+    background-color: #000!important;
+    height: 100%;
+    max-width: 100% !important;
+    overflow-wrap: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Actor";
+    src: url("https://fonts.googleapis.com/css?family=Actor");
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 48px;
+    margin-left: 50px;
+}
+
+.opennav {
+    position: fixed;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    font-size: 48px;
+    padding: 2% 1% 1% 1%;
+    z-index: 1;
+}
+
+
+/*logo */
+
+.logo {
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+
+/* small screens  */
+
+@media (max-width: 800px) {
+    .logo {
+        max-width: 100%;
+    }
+}
+
+
+/* Style page content - use this if you want to push the page content to the right
+ when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    margin-top: 0%;
+    padding: 0%;
+}
+
+.portada {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/fulls/om3.jpg);
+    height: 100vh;
+    margin: 0%;
+    transition: scale(0.2) 10s;
+}
+
+
+/* On smaller screens, where height is less than 450px,
+change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 480px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .portada {
+        max-width: 10px
+    }
+}
+@media screen and (max-width: 480px) {
+    .closebtn{
+        margin-top: 12%;
+    }
+    .sidenav {
+        padding-top: 40px;
+        line-height: 60%;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .portada {
+        max-width: 100%;
+    }
+    #social-media-icons{
+    margin-bottom: 1%;
+    margin-top: 20%;
+    color: white;
+    font-size: 4em; 
+    }
+    .overlay{
+     font-size: 0.9em;
+     position: relative;
+     vertical-align: middle;
+     position: absolute;
+     top: 0;
+     left:0;
+     right: 0;
+    }
+    .overlay .titulogaleria{
+     position: absolute;
+     top: 50%;
+     left:50%;
+        
+    }
+}
+
+
+/******************** ABOUT SECTION **************************/
+
+.about {
+    text-align: -moz-center;
+    text-align: center;
+    width: 90%;
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    position: static;
+    padding: 5%;
+    margin: 5%;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 1.3em;
+    color: #A9A9A9;
+    margin-bottom: 15px;
+    text-align: -moz-center;
+}
+
+.aboutimage {
+    max-width: 100%;
+    text-align: -moz-center;
+    text-align: center;
+}
+
+.aboutimage img {
+    max-width: 40%;
+}
+
+
+/* small screens  */
+
+@media (max-width: 800px) {
+    .sidenavbar {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
+    #social-media-icons {
+        max-width: 100%;
+        margin: 1% 1% 1% 1%;
+    }
+    #social-media-icons i {
+        font-size: 2em;
+    }
+    .header,
+    #home {
+        margin-left: 0;
+    }
+    .about img{
+       max-width: 100%; 
+    }
+    .about h1{
+       font-size: 1.7rem;
+    }
+    .about p{
+        font-size: 0.9rem;
+    }
+}
+
+
+/******************** PHOTO GALLERY  *************************/
+
+.phototitle {
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.photo-gallery {
+    width: 100%;
+    margin: 1px auto;
+}
+
+.photo-gallery h1 {
+    font-size: 3.5em;
+    width: 100%;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.photo-gallery {
+    /*! opacity: 0.9; */
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-dialog {
+    width: 900px;
+    margin: 30px auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+figure.grande {
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.9);
+    padding: 1% 10% 10% 1%;
+    animation-name: grande;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+figure.grande img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@keyframes grande {
+    0% {
+        height: 0%;
+        width: 0%;
+    }
+    100% {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+.fondofoto {
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 20%;
+    flex: 20%;
+}
+
+.column img {
+    /*! margin-top: 12px; */
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/****Efecto titulo galeria ****/
+
+.indexgalerias {
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.titulogaleria {
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+
+.overlay {
+    vertical-align: middle;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+
+.containergaleria {
+    position: relative;
+    width: 90%;
+    height: 150px;
+    margin-bottom: 3%;
+}
+
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+
+.containergaleria:hover .overlay {
+    transform: scale(1);
+}
+
+.imagegaleria {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* small screens  */
+
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    .photo-gallery {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 1%;
+    }
+    .modal-content {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+    .photo-gallery p {
+        border-bottom: 1px solid #ffffff;
+    }
+    .photo-gallery h1 {
+        font-size: 1.5em;
+    }
+    .overlay:hover {
+        visibility: visible;
+        vertical-align: middle;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(20, 20, 20, 0.8);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transition: .3s ease;
+    }
+    .titulogaleria {
+        font-size: 1.2em;
+    }
+}
+
+
+/*** SOCIAL MEDIA ICONS ********/
+
+#social-media-icons {
+    display: inline-flex;
+    margin-bottom: 1%;
+    margin-top: 40%;
+    color: white;
+    font-size: 5em;
+}
+
+#social-media-icons i {
+    font-size: 2em;
+}
+
+#cajacookies {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 20px 15px #888888;
+}
+
+.copy {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    color: #818181;
+    font-size: 0.8em;
+}

@@ -3,7 +3,6 @@ DROP DATABASE IF EXISTS framework2020;
 
 CREATE DATABASE framework2020 DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
 USE framework2020;
-
 --
 -- TABLA usuarios
 --

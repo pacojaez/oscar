@@ -1,0 +1,21 @@
+/* TEAM */
+	Chef:Paco Jáñez
+	Contact: pacojaez [at] gmail.com
+	From:Barcelona, Catalonia, Spain
+
+	UI developer: Paco Jáñez
+	
+	Web designer: Paco Jáñez
+	
+
+/* THANKS */
+    Robert Sallent for their teaching in web development.
+    To all my collegues of the CIFO Vallés course.
+		
+
+/* SITE */
+	Last update:2020/05/23
+	Language: Castellano
+	Doctype:HTML5
+	IDE: VSCODE, FileZilla, Photoshop, Atom, MySQLWorkbench, XAMMP.
+    Application running over the framework develop by Robert Sallent

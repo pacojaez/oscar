@@ -1,7 +1,7 @@
 <?php
 /**
  * This is a PHP library that handles calling reCAPTCHA.
- * 
+ *
  * @copyright Copyright (c) 2014, Google Inc.
  * @link      http://www.google.com/recaptcha
  * */
@@ -17,7 +17,7 @@ class ReCaptchaResponse{
 class ReCaptcha{
     private static $_signupUrl = "https://www.google.com/recaptcha/admin";
     private static $_siteVerifyUrl = "https://www.google.com/recaptcha/api/siteverify?";
-    private $_secret;
+    private $_secret="6LerG30UAAAAAGvH9t-05dO_i82NrQNRkLZOYPfw";
     private static $_version = "php_1.0";
 
     /**
@@ -96,13 +96,14 @@ class ReCaptcha{
             )
         );
         $answers = json_decode($getResponse, true);
+        //var_dump($getResponse); die();
         $recaptchaResponse = new ReCaptchaResponse();
 
         if (trim($answers ['success']) == true) {
             $recaptchaResponse->success = true;
         } else {
             $recaptchaResponse->success = false;
-            $recaptchaResponse->errorCodes = $answers [error-codes];
+            $recaptchaResponse->errorCodes = $answers ['error-codes'];
         }
 
         return $recaptchaResponse;
